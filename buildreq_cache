@@ -1,0 +1,5 @@
+2.40.0
+gi-docgen
+gtk+-dev
+pkgconfig(gtk4)
+pkgconfig(gtk4-unix-print)
