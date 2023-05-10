@@ -7,7 +7,7 @@
 #
 Name     : webkitgtk60
 Version  : 2.40.1
-Release  : 117
+Release  : 118
 URL      : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
 Source0  : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
 Source1  : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz.asc
@@ -210,7 +210,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683333212
+export SOURCE_DATE_EPOCH=1683678451
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -266,7 +266,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1683333212
+export SOURCE_DATE_EPOCH=1683678451
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/webkitgtk60
 cp %{_builddir}/webkitgtk-%{version}/Source/JavaScriptCore/COPYING.LIB %{buildroot}/usr/share/package-licenses/webkitgtk60/130f5281a2ef2a49822787e013323bde2ff119dd || :
