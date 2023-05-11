@@ -7,7 +7,7 @@
 #
 Name     : webkitgtk60
 Version  : 2.40.1
-Release  : 118
+Release  : 119
 URL      : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
 Source0  : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
 Source1  : https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz.asc
