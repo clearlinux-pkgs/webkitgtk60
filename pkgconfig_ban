@@ -25,8 +25,7 @@ aom
 libgav1
 libyuv
 rav1e
-<<<<<<< Updated upstream
 libelogind
-=======
-libelogind
->>>>>>> Stashed changes
+libusev
+libjxl
+brotlidec
