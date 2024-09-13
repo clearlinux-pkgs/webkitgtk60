@@ -7,7 +7,7 @@
 #
 Name     : webkitgtk60
 Version  : 2.44.2
-Release  : 126
+Release  : 127
 URL      : https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 Source0  : https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 Summary  : GTK+ version of the JavaScriptCore engine
