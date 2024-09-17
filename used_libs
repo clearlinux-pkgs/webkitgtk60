@@ -31,9 +31,9 @@ libgstvideo-1.0.so.0
 libgtk-4.so.1
 libharfbuzz-icu.so.0
 libharfbuzz.so.0
-libicudata.so.73
-libicui18n.so.73
-libicuuc.so.73
+libicudata.so.75
+libicui18n.so.75
+libicuuc.so.75
 libjpeg.so.62
 liblcms2.so.2
 libm.so.6
@@ -52,6 +52,7 @@ libwayland-egl.so.1
 libwayland-server.so.0
 libwebp.so.7
 libwebpdemux.so.2
+libwebpmux.so.3
 libwoff2dec.so.1.0.2
 libxml2.so.2
 libxslt.so.1
