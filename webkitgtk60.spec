@@ -8,11 +8,11 @@
 # Source0 file verified with key 0x6C1009B693975393 (cgarcia@igalia.com)
 #
 Name     : webkitgtk60
-Version  : 2.46.1
-Release  : 129
-URL      : https://webkitgtk.org/releases/webkitgtk-2.46.1.tar.xz
-Source0  : https://webkitgtk.org/releases/webkitgtk-2.46.1.tar.xz
-Source1  : https://webkitgtk.org/releases/webkitgtk-2.46.1.tar.xz.asc
+Version  : 2.46.2
+Release  : 130
+URL      : https://webkitgtk.org/releases/webkitgtk-2.46.2.tar.xz
+Source0  : https://webkitgtk.org/releases/webkitgtk-2.46.2.tar.xz
+Source1  : https://webkitgtk.org/releases/webkitgtk-2.46.2.tar.xz.asc
 Source2  : 6C1009B693975393.pkey
 Summary  : GTK+ version of the JavaScriptCore engine
 Group    : Development/Tools
@@ -31,6 +31,7 @@ BuildRequires : bubblewrap
 BuildRequires : buildreq-cmake
 BuildRequires : cmake
 BuildRequires : compat-libsoup-soname-24-dev
+BuildRequires : expat-dev
 BuildRequires : extra-cmake-modules gperf
 BuildRequires : extra-cmake-modules pkgconfig(wayland-client)
 BuildRequires : flex
@@ -190,10 +191,10 @@ chmod 700 .gnupg
 gpg --homedir .gnupg --import %{SOURCE2}
 gpg --homedir .gnupg --status-fd 1 --verify %{SOURCE1} %{SOURCE0} > gpg.status
 grep -E '^\[GNUPG:\] (GOODSIG|EXPKEYSIG) 6C1009B693975393' gpg.status
-%setup -q -n webkitgtk-2.46.1
-cd %{_builddir}/webkitgtk-2.46.1
+%setup -q -n webkitgtk-2.46.2
+cd %{_builddir}/webkitgtk-2.46.2
 pushd ..
-cp -a webkitgtk-2.46.1 buildavx2
+cp -a webkitgtk-2.46.2 buildavx2
 popd
 
 %build
@@ -201,7 +202,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727731208
+export SOURCE_DATE_EPOCH=1729528221
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -292,7 +293,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1727731208
+export SOURCE_DATE_EPOCH=1729528221
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/webkitgtk60
 cp %{_builddir}/webkitgtk-%{version}/Source/JavaScriptCore/COPYING.LIB %{buildroot}/usr/share/package-licenses/webkitgtk60/130f5281a2ef2a49822787e013323bde2ff119dd || :
@@ -477,13 +478,13 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libjavascriptcoregtk-6.0.so.1.3.10
-/V3/usr/lib64/libwebkitgtk-6.0.so.4.10.3
+/V3/usr/lib64/libjavascriptcoregtk-6.0.so.1.3.11
+/V3/usr/lib64/libwebkitgtk-6.0.so.4.10.4
 /V3/usr/lib64/webkitgtk-6.0/injected-bundle/libwebkitgtkinjectedbundle.so
 /usr/lib64/libjavascriptcoregtk-6.0.so.1
-/usr/lib64/libjavascriptcoregtk-6.0.so.1.3.10
+/usr/lib64/libjavascriptcoregtk-6.0.so.1.3.11
 /usr/lib64/libwebkitgtk-6.0.so.4
-/usr/lib64/libwebkitgtk-6.0.so.4.10.3
+/usr/lib64/libwebkitgtk-6.0.so.4.10.4
 /usr/lib64/webkitgtk-6.0/injected-bundle/libwebkitgtkinjectedbundle.so
 
 %files libexec
