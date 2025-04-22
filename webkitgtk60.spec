@@ -9,7 +9,7 @@
 #
 Name     : webkitgtk60
 Version  : 2.46.4
-Release  : 132
+Release  : 133
 URL      : https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz
 Source0  : https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz
 Source1  : https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz.asc
