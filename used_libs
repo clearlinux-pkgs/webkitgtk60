@@ -7,6 +7,7 @@ libcairo-gobject.so.2
 libcairo.so.2
 libdrm.so.2
 libepoxy.so.0
+libexpat.so.1
 libfontconfig.so.1
 libfreetype.so.6
 libgbm.so.1
@@ -54,6 +55,6 @@ libwebp.so.7
 libwebpdemux.so.2
 libwebpmux.so.3
 libwoff2dec.so.1.0.2
-libxml2.so.2
+libxml2.so.16
 libxslt.so.1
 libz.so.1
